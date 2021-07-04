@@ -1,0 +1,5 @@
+<div class="grid" [ngStyle]="gridStyle()">   
+    <grid-input *ngFor="let item of items" [item]="item" [ngStyle]="{
+        'grid-area': item.row + '/' + item.col + '/' + item.row + '/' + item.col}">
+    </grid-input>
+</div>
